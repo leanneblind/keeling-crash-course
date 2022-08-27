@@ -137,6 +137,36 @@ If you are interested in using Dask on Keeling, be sure to checkout the followin
 
 ---
 
+## Using VS Code
+VS Code (Visual Studio Code) is a source-code editor. It provides support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Not only does VS Code come with all of these apects that enhance your coding experience, but you can connect a remote explorer (keeling) to VS Code; if you do this, you will be able to login to keeling by only entering your password (skipping steps 3 through 9 under the 'Install Jupyter and Create Directory' section). So let's get started!
+
+1) Install VS Code at https://code.visualstudio.com/download for whatever operating system your computer is (Mac, Windows, or Linux)
+
+2) Once you open VS Code, click on the "Extensions" icon on the panel on the left-hand side of your screen
+* In the search menu, type in "Remote - SSH" and install this extension
+  The Remote - SSH extension lets you use any remote machine (keeling in this case) with a SSH server as your development environment.
+  
+* In the search menu, type in "Remote - SSH: Editing Configuration Files" and install this extension
+  This extension complements the Remote - SSH extension with syntax colorization, keyword intellisense, and simple snippets when editing SSH configuration files.
+  
+  Now you have the extensions you need to connect VS Code to Keeling!
+  
+3) CLick on the "Remote Explorer" icon on the panel on the left-hand side of your screen
+
+You will see "SSH Targets" in bold at the top. Click on the "+" symbol next to this
+A windown will pop up askign you to "Enter SSH Connection Command". Type in:
+
+'''
+ssh netid@keeling.earth.illinois.edu
+
+'''
+And press Enter
+ 
+
+
+
+---
+
 ## Installing and Compiling WRF on Keeling
 If you are working with Weather Research and Forecasting (WRF) model simulations, You can check the lectures by Prof. Steve Nesbitt on mesoscale modeling [here](https://publish.illinois.edu/mesomodel/)
 
